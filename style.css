@@ -1,0 +1,39 @@
+body {
+  overflow: hidden;
+}
+
+#book {
+  width: 600px;
+  height: 500px;
+  margin: 5% auto;
+}
+
+.page1 {
+  background: url(images/cover.jpg);
+  background-size: 100% 100%;
+}
+.page2 {
+  background: url(images/page.jpg);
+  background-size: cover;
+
+}
+.page3 {
+  background: url(images/cover.jpg);
+  background-size: cover;
+
+}
+.page4 {
+  background: url(images/page.jpg);
+  background-size: cover;
+
+}
+.page5 {
+  background: url(images/cover.jpg);
+  background-size: cover;
+
+}
+.page6 {
+  background: url(images/page.jpg);
+  background-size: cover;
+
+}
