@@ -1,69 +1,125 @@
 body {
-  overflow: hidden;
-  background: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
-  /* Chrome 10-25, Safari 5.1-6 */
+    overflow: hidden;
+    background: #141e30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #243b55, #141e30);
+    /* Chrome 10-25, Safari 5.1-6 */
 }
 
 #book {
-  width: 800px;
-  height: 600px;
-  margin: 3% auto;
+    width: 800px;
+    height: 600px;
+    margin: 3% auto;
 }
 
 .page1 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-01.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img1.jpg);
+    background-size: 100% 100%;
 }
 .page2 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-02.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img2.jpg);
+    background-size: 100% 100%;
 }
 .page3 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-03.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img3.jpg);
+    background-size: 100% 100%;
 }
 .page4 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-04.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img4.jpg);
+    background-size: 100% 100%;
 }
 .page5 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-15.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img5.jpg);
+    background-size: 100% 100%;
 }
 .page6 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-16.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img6.jpg);
+    background-size: 100% 100%;
 }
 .page7 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-17.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img7.jpg);
+    background-size: 100% 100%;
 }
 .page8 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-18.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img8.jpg);
+    background-size: 100% 100%;
 }
 .page9 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-32.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img9.jpg);
+    background-size: 100% 100%;
 }
 .page10 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-33.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img10.jpg);
+    background-size: 100% 100%;
 }
 .page11 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-36.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img11.jpg);
+    background-size: 100% 100%;
 }
 .page12 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-37.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img12.jpg);
+    background-size: 100% 100%;
 }
 .page13 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-83.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img13.jpg);
+    background-size: 100% 100%;
 }
 .page14 {
-  background: url(images/moto-trend/681502422-Motor-Trend-January-2024-84.png);
-  background-size: 100% 100%;
+    background: url(images/vardhaman-chroniceles-single-page/img14.jpg);
+    background-size: 100% 100%;
+}
+.page15 {
+    background: url(images/vardhaman-chroniceles-single-page/img15.jpg);
+    background-size: 100% 100%;
+}
+.page16 {
+    background: url(images/vardhaman-chroniceles-single-page/img16.jpg);
+    background-size: 100% 100%;
+}
+.page17 {
+    background: url(images/vardhaman-chroniceles-single-page/img17.jpg);
+    background-size: 100% 100%;
+}
+.page18 {
+    background: url(images/vardhaman-chroniceles-single-page/img18.jpg);
+    background-size: 100% 100%;
+}
+.page19 {
+    background: url(images/vardhaman-chroniceles-single-page/img19.jpg);
+    background-size: 100% 100%;
+}
+.page20 {
+    background: url(images/vardhaman-chroniceles-single-page/img20.jpg);
+    background-size: 100% 100%;
+}
+.page21 {
+    background: url(images/vardhaman-chroniceles-single-page/img21.jpg);
+    background-size: 100% 100%;
+}
+.page22 {
+    background: url(images/vardhaman-chroniceles-single-page/img22.jpg);
+    background-size: 100% 100%;
+}
+.page23 {
+    background: url(images/vardhaman-chroniceles-single-page/img23.jpg);
+    background-size: 100% 100%;
+}
+.page24 {
+    background: url(images/vardhaman-chroniceles-single-page/img24.jpg);
+    background-size: 100% 100%;
+}
+.page25 {
+    background: url(images/vardhaman-chroniceles-single-page/img25.jpg);
+    background-size: 100% 100%;
+}
+.page26 {
+    background: url(images/vardhaman-chroniceles-single-page/img26.jpg);
+    background-size: 100% 100%;
+}
+.page27 {
+    background: url(images/vardhaman-chroniceles-single-page/img27.jpg);
+    background-size: 100% 100%;
+}
+.page28 {
+    background: url(images/vardhaman-chroniceles-single-page/img28.jpg);
+    background-size: 100% 100%;
 }
