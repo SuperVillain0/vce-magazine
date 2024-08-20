@@ -1,14 +1,63 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+}
 body {
     overflow: hidden;
-    background: #141e30; /* fallback for old browsers */
+    background: #141e30;
     background: -webkit-linear-gradient(to bottom, #243b55, #141e30);
-    /* Chrome 10-25, Safari 5.1-6 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 #book {
-    width: 800px;
-    height: 600px;
-    margin: 3% auto;
+    margin: 50px;
+    width: calc(90vh * 4 / 3); /* Maintain 4:3 aspect ratio based on height */
+    height: 90vh;
+    max-width: calc(
+        100vw - 200px
+    ); /* Ensure the book doesn't exceed the viewport width minus 200px */
+    max-height: calc(
+        (100vw - 200px) * 3 / 4
+    ); /* Adjust height based on width to maintain aspect ratio */
+}
+
+.nav-buttons {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    #book {
+        width: 90vw; /* Decide the width based on viewport width */
+        height: calc(95vw * 0.75); /* Maintain 4:3 aspect ratio */
+    }
+}
+
+@media (max-width: 480px) {
+    #book {
+        width: 90vw; /* Decide the width based on viewport width */
+        height: calc(95vw * 0.75); /* Maintain 4:3 aspect ratio */
+    }
 }
 
 .page1 {

@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Motortrend | Magazine Flip Book</title>
+    <title>Vardhaman Chronicles | Magazine Flip Book</title>
 </head>
 
 <body>
@@ -44,12 +44,24 @@
         <div class="page28"></div>
     </div>
 
+    <div class="nav-buttons">
+        <button class="nav-button" id="prevPage">⟨ Previous</button>
+        <button class="nav-button" id="nextPage">Next ⟩</button>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="turn.js"></script>
     <script>
-        $('#book').turn({ gradients: true, accceleration: true });
+        $('#book').turn({ gradients: true, acceleration: true });
+
+        $('#prevPage').click(function () {
+            $('#book').turn('previous');
+        });
+
+        $('#nextPage').click(function () {
+            $('#book').turn('next');
+        });
     </script>
 </body>
 
