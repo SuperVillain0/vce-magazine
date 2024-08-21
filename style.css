@@ -45,18 +45,10 @@ body {
     pointer-events: all;
 }
 
-/* Adjustments for smaller screens */
 @media (max-width: 768px) {
     #book {
-        width: 90vw; /* Decide the width based on viewport width */
-        height: calc(95vw * 0.75); /* Maintain 4:3 aspect ratio */
-    }
-}
-
-@media (max-width: 480px) {
-    #book {
-        width: 90vw; /* Decide the width based on viewport width */
-        height: calc(95vw * 0.75); /* Maintain 4:3 aspect ratio */
+        max-width: 90vw;
+        max-height: calc(90vw * 11 / 8.5);
     }
 }
 
