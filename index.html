@@ -44,9 +44,30 @@
         <div class="page28"></div>
     </div>
 
+    <!-- <div id="book">
+        <div class="page">
+            <img src="" alt="Page 1">
+        </div>
+        <div class="page">
+            <img src="./images/vardhaman-chroniceles-single-page/img1.jpg" alt="Page 2">
+        </div>
+        <div class="page">
+            <img src="./images/vardhaman-chroniceles-single-page/img2.jpg" alt="Page 2">
+        </div>
+        <div class="page">
+            <img src="./images/vardhaman-chroniceles-single-page/img3.jpg" alt="Page 2">
+        </div>
+        <div class="page">
+            <img src="./images/vardhaman-chroniceles-single-page/img4.jpg" alt="Page 2">
+        </div>
+        <div class="page">
+            <img src="./images/vardhaman-chroniceles-single-page/img1.jpg" alt="Page 2">
+        </div>
+    </div> -->
+
     <div class="nav-buttons">
-        <button class="nav-button" id="prevPage">⟨ Previous</button>
-        <button class="nav-button" id="nextPage">Next ⟩</button>
+        <button class="nav-button" id="prevPage">⟨ </button>
+        <button class="nav-button" id="nextPage"> ⟩</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -61,6 +82,17 @@
 
         $('#nextPage').click(function () {
             $('#book').turn('next');
+        });
+
+        $(document).keydown(function (e) {
+            switch (e.which) {
+                case 37: // left arrow key
+                    $('#book').turn('previous');
+                    break;
+                case 39: // right arrow key
+                    $('#book').turn('next');
+                    break;
+            }
         });
     </script>
 </body>
