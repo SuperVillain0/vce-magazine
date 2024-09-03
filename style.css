@@ -4,6 +4,7 @@ body {
     padding: 0;
 }
 body {
+    zoom: 1;
     overflow: hidden;
     background: #141e30;
     background: -webkit-linear-gradient(to bottom, #243b55, #141e30);
@@ -14,15 +15,26 @@ body {
 }
 
 #book {
-    margin: 50px;
-    width: calc(90vh * 4 / 3); /* Maintain 4:3 aspect ratio based on height */
-    height: 90vh;
-    max-width: calc(
-        100vw - 200px
-    ); /* Ensure the book doesn't exceed the viewport width minus 200px */
-    max-height: calc(
-        (100vw - 200px) * 3 / 4
-    ); /* Adjust height based on width to maintain aspect ratio */
+    --page-ratio: calc(11 / 8.5);
+    --book-ratio: calc(11 / 17);
+    --book-width: min(100vw, calc(100vh / var(--page-ratio) * 2));
+    --book-height: calc(var(--book-width) * var(--page-ratio) / 2);
+
+    width: var(--book-width);
+    height: var(--book-height);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (orientation: portrait) {
+    #book {
+        --book-width: 100vw;
+        --book-height: calc(var(--book-width) * var(--page-ratio) / 2);
+    }
 }
 
 .nav-buttons {
@@ -39,17 +51,28 @@ body {
 .nav-button {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    font-weight: 800;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 15px;
     cursor: pointer;
     pointer-events: all;
 }
 
-@media (max-width: 768px) {
-    #book {
-        max-width: 90vw;
-        max-height: calc(90vw * 11 / 8.5);
-    }
+#fullscreen-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 8px;
+    background-color: #c9c9c9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#fullscreen-button:hover {
+    background-color: #ababab;
+}
+.fullscreen-img {
+    height: 15px;
 }
 
 .page1 {
